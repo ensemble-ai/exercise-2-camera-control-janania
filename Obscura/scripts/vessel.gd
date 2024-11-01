@@ -11,6 +11,8 @@ const WIDTH:float = RADIUS * 2.0
 const BASE_SPEED = 50
 const HYPER_SPEED = 300
 
+func _ready() -> void:
+	set_process_priority(-1)
 func _physics_process(_delta):
 	
 	var speed = BASE_SPEED
